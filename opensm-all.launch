@@ -1,0 +1,8 @@
+#!/bin/bash
+prog=/usr/bin/opensm
+
+for guid in $(ibstat -p); do
+  (while true; do $prog -g $guid; sleep 30; done) &
+done
+
+exit 0
