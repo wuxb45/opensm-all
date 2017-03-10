@@ -10,8 +10,8 @@ license=('GPL2' 'custom:"Open Fabrics Alliance BSD"')
 depends=('opensm')
 source=('opensm-all.service'
         'opensm-all.launch')
-md5sums=('e805c7aa11493c7186759e0427522e9b'
-         '3435bd077a530ac28c3ef5c8a63d05d5')
+md5sums=('SKIP'
+         'SKIP')
 
 package() {
   install -Dm644 "${srcdir}/opensm-all.service" "${pkgdir}/usr/lib/systemd/system/opensm-all.service"
