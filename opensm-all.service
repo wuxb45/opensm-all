@@ -1,13 +1,13 @@
 [Unit]
 Description=Starts the OpenSM InfiniBand fabric Subnet Managers on All Ports
 DefaultDependencies=false
-Before=network.target remote-fs-pre.target
+Before=remote-fs-pre.target
 Requires=rdma.service
-After=rdma.service
+After=network.target rdma.service
 
 [Service]
 Type=forking
 ExecStart=/usr/bin/opensm-all.launch
 
 [Install]
-WantedBy=network.target
+WantedBy=sysinit.target
