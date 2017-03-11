@@ -1,0 +1,6 @@
+Maintainer: Xingbo Wu <wuxb45@gmail.com>
+
+opensm-all starts an opensm instance for each individual IB port. It simplifies the configuration when you have multiple IB subnets. It works with zero configuration.
+
+This is an independent package that should be installed together with [opensm].
+To use opensm-all, you should disable opensm.service, and enable opensm-all.service.
